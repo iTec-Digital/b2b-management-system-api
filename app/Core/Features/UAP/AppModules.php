@@ -34,4 +34,10 @@ return [
         "Description" => "Manage the application settings",
         "ActionButtons" => [$MODULE_ACCESS, $EDIT]
     ],
+    "BRANCHES" => [
+        "Code" => "BRANCHES",
+        "Label" => "Branch List",
+        "Description" => "Manage all the branches of the company",
+        "ActionButtons" => [$MODULE_ACCESS, $ADD, $EDIT, $VIEW, $DELETE, $TRASH, $RESTORE, $DELETE_FOREVER]
+    ],
 ];

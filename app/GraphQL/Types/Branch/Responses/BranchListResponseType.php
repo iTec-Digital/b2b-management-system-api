@@ -21,7 +21,15 @@ class BranchListResponseType extends JsonResponseType
             'data' => [
                 'type' => Type::listOf(GraphQL::type('Branch')),
                 'description' => 'Branch List',
-            ]
+            ],
+            'total_rows' => [
+                'type' => Type::int(),
+                'description' => 'Total Row Number',
+            ],
+            'total_pages' => [
+                'type' => Type::int(),
+                'description' => 'Total Pages Number',
+            ],
         ]);
     }
 }

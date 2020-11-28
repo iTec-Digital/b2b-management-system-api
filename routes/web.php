@@ -21,7 +21,11 @@ Route::get('/', function () {
 Route::get('/graphiql', function () {
     return view('GraphiQL.GraphiQL');
 });
+
+Route::get('/Test', [\App\Http\Controllers\TestController::class, 'index']);
+
 Route::get('/test', function () {
+
     $UAP = new \App\Core\Features\UAP\UAP();
     //return $UAP->SetModuleActionAccessPermission(1, 'USERS', 'VIEW', false);
     return $UAP->FetchModulePermissions(1, 'USERS')['MODULE_ACCESS'];
